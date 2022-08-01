@@ -6,7 +6,10 @@ import ProductList from "./components/product-list";
 import Details from "./components/details";
 import Cart from "./components/cart";
 import Default from "./components/default";
+import Modal from "./components/modal";
 import "./base.scss";
+
+
 
 class App extends Component {
   render() {
@@ -19,6 +22,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
+        <Modal />
       </>
     );
   }
